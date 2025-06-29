@@ -30,7 +30,7 @@ const programsData: Record<string, ProgramCategory> = {
     programs: [
       {
         id: 'computer-engineering',
-        name: 'Computer Engineering',
+        name: 'Computer Engineering (CE)',
         accreditationStatus: 'Accredited',
         validityPeriod: '2021-2027',
         lastAccredited: '2021',
@@ -39,26 +39,30 @@ const programsData: Record<string, ProgramCategory> = {
           { name: 'Self Assessment Report.pdf', url: '/nba/computer/sar.pdf' },
           { name: 'NBA Certificate.pdf', url: '/nba/computer/certificate.pdf' },
           { name: 'Program Outcomes.pdf', url: '/nba/computer/outcomes.pdf' },
-          { name: 'Curriculum Details.pdf', url: '/nba/computer/curriculum.pdf' }
+          { name: 'Curriculum Details.pdf', url: '/nba/computer/curriculum.pdf' },
+          { name: 'Faculty Profiles.pdf', url: '/nba/computer/faculty.pdf' },
+          { name: 'Lab Infrastructure.pdf', url: '/nba/computer/labs.pdf' }
         ]
       },
       {
-        id: 'information-technology',
-        name: 'Information Technology',
+        id: 'computer-science-engineering',
+        name: 'Computer Science and Engineering (CSE)',
         accreditationStatus: 'Accredited',
-        validityPeriod: '2021-2027',
-        lastAccredited: '2021',
+        validityPeriod: '2022-2028',
+        lastAccredited: '2022',
         studentStrength: 180,
         documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/it/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/it/certificate.pdf' },
-          { name: 'Program Outcomes.pdf', url: '/nba/it/outcomes.pdf' },
-          { name: 'Industry Collaboration.pdf', url: '/nba/it/industry.pdf' }
+          { name: 'Self Assessment Report.pdf', url: '/nba/cse/sar.pdf' },
+          { name: 'NBA Certificate.pdf', url: '/nba/cse/certificate.pdf' },
+          { name: 'Program Outcomes.pdf', url: '/nba/cse/outcomes.pdf' },
+          { name: 'Industry Collaboration.pdf', url: '/nba/cse/industry.pdf' },
+          { name: 'Research Activities.pdf', url: '/nba/cse/research.pdf' },
+          { name: 'Student Projects.pdf', url: '/nba/cse/projects.pdf' }
         ]
       },
       {
         id: 'electronics-telecom',
-        name: 'Electronics & Telecommunication',
+        name: 'Electronics & Telecommunications (EXTC)',
         accreditationStatus: 'Accredited',
         validityPeriod: '2020-2026',
         lastAccredited: '2020',
@@ -67,83 +71,47 @@ const programsData: Record<string, ProgramCategory> = {
           { name: 'Self Assessment Report.pdf', url: '/nba/extc/sar.pdf' },
           { name: 'NBA Certificate.pdf', url: '/nba/extc/certificate.pdf' },
           { name: 'Lab Infrastructure.pdf', url: '/nba/extc/labs.pdf' },
-          { name: 'Faculty Profiles.pdf', url: '/nba/extc/faculty.pdf' }
-        ]
-      },
-      {
-        id: 'electronics-engineering',
-        name: 'Electronics Engineering',
-        accreditationStatus: 'Accredited',
-        validityPeriod: '2020-2026',
-        lastAccredited: '2020',
-        studentStrength: 60,
-        documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/elex/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/elex/certificate.pdf' },
-          { name: 'Research Activities.pdf', url: '/nba/elex/research.pdf' },
-          { name: 'Student Projects.pdf', url: '/nba/elex/projects.pdf' }
-        ]
-      },
-      {
-        id: 'mechanical-engineering',
-        name: 'Mechanical Engineering',
-        accreditationStatus: 'Accredited',
-        validityPeriod: '2022-2028',
-        lastAccredited: '2022',
-        studentStrength: 120,
-        documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/mech/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/mech/certificate.pdf' },
-          { name: 'Workshop Facilities.pdf', url: '/nba/mech/workshop.pdf' },
-          { name: 'Industry Partnerships.pdf', url: '/nba/mech/partnerships.pdf' }
-        ]
-      },
-      {
-        id: 'chemical-engineering',
-        name: 'Chemical Engineering',
-        accreditationStatus: 'Accredited',
-        validityPeriod: '2022-2028',
-        lastAccredited: '2022',
-        studentStrength: 60,
-        documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/chem/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/chem/certificate.pdf' },
-          { name: 'Process Labs.pdf', url: '/nba/chem/labs.pdf' },
-          { name: 'Safety Protocols.pdf', url: '/nba/chem/safety.pdf' }
+          { name: 'Faculty Profiles.pdf', url: '/nba/extc/faculty.pdf' },
+          { name: 'Industry Partnerships.pdf', url: '/nba/extc/partnerships.pdf' },
+          { name: 'Communication Systems Lab.pdf', url: '/nba/extc/comm-lab.pdf' }
         ]
       }
     ]
   },
   'pg-programs': {
     title: 'Postgraduate Programs',
-    description: 'Master of Engineering programs accredited by NBA',
+    description: 'Master of Technology and Master of Computer Applications programs accredited by NBA',
     programs: [
       {
-        id: 'me-computer',
-        name: 'M.E. Computer Engineering',
+        id: 'mtech-computer',
+        name: 'M.Tech Computer Engineering',
         accreditationStatus: 'Accredited',
         validityPeriod: '2023-2029',
         lastAccredited: '2023',
         studentStrength: 36,
         documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/me-comp/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/me-comp/certificate.pdf' },
-          { name: 'Research Publications.pdf', url: '/nba/me-comp/publications.pdf' },
-          { name: 'Thesis Guidelines.pdf', url: '/nba/me-comp/thesis.pdf' }
+          { name: 'Self Assessment Report.pdf', url: '/nba/mtech-comp/sar.pdf' },
+          { name: 'NBA Certificate.pdf', url: '/nba/mtech-comp/certificate.pdf' },
+          { name: 'Research Publications.pdf', url: '/nba/mtech-comp/publications.pdf' },
+          { name: 'Thesis Guidelines.pdf', url: '/nba/mtech-comp/thesis.pdf' },
+          { name: 'Advanced Lab Facilities.pdf', url: '/nba/mtech-comp/advanced-labs.pdf' },
+          { name: 'Industry Collaboration.pdf', url: '/nba/mtech-comp/industry.pdf' }
         ]
       },
       {
-        id: 'me-electronics',
-        name: 'M.E. Electronics Engineering',
+        id: 'mca',
+        name: 'Master of Computer Applications (MCA)',
         accreditationStatus: 'Accredited',
         validityPeriod: '2023-2029',
         lastAccredited: '2023',
-        studentStrength: 18,
+        studentStrength: 60,
         documents: [
-          { name: 'Self Assessment Report.pdf', url: '/nba/me-elex/sar.pdf' },
-          { name: 'NBA Certificate.pdf', url: '/nba/me-elex/certificate.pdf' },
-          { name: 'Advanced Labs.pdf', url: '/nba/me-elex/advanced-labs.pdf' },
-          { name: 'Industry Projects.pdf', url: '/nba/me-elex/industry-projects.pdf' }
+          { name: 'Self Assessment Report.pdf', url: '/nba/mca/sar.pdf' },
+          { name: 'NBA Certificate.pdf', url: '/nba/mca/certificate.pdf' },
+          { name: 'Program Curriculum.pdf', url: '/nba/mca/curriculum.pdf' },
+          { name: 'Software Development Labs.pdf', url: '/nba/mca/software-labs.pdf' },
+          { name: 'Industry Training Programs.pdf', url: '/nba/mca/training.pdf' },
+          { name: 'Placement Records.pdf', url: '/nba/mca/placements.pdf' }
         ]
       }
     ]
@@ -163,7 +131,9 @@ const programsData: Record<string, ProgramCategory> = {
           { name: 'Institutional SAR.pdf', url: '/nba/institutional/sar.pdf' },
           { name: 'NBA Manual.pdf', url: '/nba/institutional/manual.pdf' },
           { name: 'Quality Assurance.pdf', url: '/nba/institutional/qa.pdf' },
-          { name: 'Continuous Improvement.pdf', url: '/nba/institutional/improvement.pdf' }
+          { name: 'Continuous Improvement.pdf', url: '/nba/institutional/improvement.pdf' },
+          { name: 'Accreditation Timeline.pdf', url: '/nba/institutional/timeline.pdf' },
+          { name: 'Institutional Policies.pdf', url: '/nba/institutional/policies.pdf' }
         ]
       },
       {
@@ -177,7 +147,9 @@ const programsData: Record<string, ProgramCategory> = {
           { name: 'Annual Assessment Report.pdf', url: '/nba/assessment/annual.pdf' },
           { name: 'Peer Review Report.pdf', url: '/nba/assessment/peer-review.pdf' },
           { name: 'External Evaluation.pdf', url: '/nba/assessment/external.pdf' },
-          { name: 'Action Taken Report.pdf', url: '/nba/assessment/action-taken.pdf' }
+          { name: 'Action Taken Report.pdf', url: '/nba/assessment/action-taken.pdf' },
+          { name: 'Quality Enhancement Report.pdf', url: '/nba/assessment/quality-enhancement.pdf' },
+          { name: 'Compliance Report.pdf', url: '/nba/assessment/compliance.pdf' }
         ]
       }
     ]
