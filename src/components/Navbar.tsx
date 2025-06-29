@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-in-out ${
           isScrolled
-            ? 'bg-white/98 dark:bg-dark-900/98 backdrop-blur-xl shadow-xl border-b border-gray-200/30 dark:border-dark-700/30'
+            ? 'bg-white dark:bg-dark-900 shadow-xl border-b border-gray-200 dark:border-dark-700'
             : 'bg-transparent'
         }`}
       >
@@ -74,7 +74,7 @@ export const Navbar: React.FC = () => {
                 href="/"
                 className={`hidden md:block text-sm font-medium px-4 py-2 rounded-lg transition-all duration-500 ${
                   isScrolled
-                    ? 'text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-accent-teal hover:bg-gray-100/80 dark:hover:bg-dark-800/80'
+                    ? 'text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-accent-teal hover:bg-gray-100 dark:hover:bg-dark-800'
                     : 'text-white/90 hover:text-white hover:bg-white/10 backdrop-blur-sm'
                 }`}
               >
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={`md:hidden p-2 rounded-lg transition-all duration-500 ${
                   isScrolled
-                    ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100/80 dark:hover:bg-dark-800/80'
+                    ? 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-800'
                     : 'text-white hover:bg-white/10 backdrop-blur-sm drop-shadow-lg'
                 }`}
                 aria-label="Toggle mobile menu"
@@ -106,11 +106,11 @@ export const Navbar: React.FC = () => {
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <div className="bg-white/98 dark:bg-dark-900/98 backdrop-blur-xl border-t border-gray-200/30 dark:border-dark-700/30 shadow-lg">
+          <div className="bg-white dark:bg-dark-900 border-t border-gray-200 dark:border-dark-700 shadow-lg">
             <div className="max-w-7xl mx-auto px-4 py-4">
               <a
                 href="/"
-                className="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gray-100/80 dark:hover:bg-dark-800/80 rounded-lg transition-all duration-300 font-medium"
+                className="block px-4 py-3 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-dark-800 rounded-lg transition-all duration-300 font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Back to Home Page
